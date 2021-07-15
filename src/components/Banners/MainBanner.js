@@ -20,7 +20,7 @@ function MainBanner() {
 const styles = StyleSheet.create({
   root: {
     width: '100%',
-    height: 256,
+    height: 200,
     flexDirection: 'row',
   },
   logo: {

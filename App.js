@@ -1,18 +1,20 @@
 import React from 'react';
-import {useColorScheme} from 'react-native';
-
 import {NavigationContainer} from '@react-navigation/native';
 import MainStack from './src/routes/MainStack';
 import 'react-native-gesture-handler';
+import useAuth from './src/hooks/useAuth';
+import Loading from './src/components/Loading';
 
 const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-  return (
-    <NavigationContainer>
-      <MainStack />
-      {/* Rest of your app code */}
-    </NavigationContainer>
-  );
+  const {user} = useAuth();
+  if (user) {
+    return (
+      <NavigationContainer>
+        <MainStack user={user} />
+      </NavigationContainer>
+    );
+  }
+  return <Loading />;
 };
 
 export default App;

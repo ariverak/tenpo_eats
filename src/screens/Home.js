@@ -4,11 +4,22 @@ import {ScrollView, View, StyleSheet} from 'react-native';
 import RestaurantsSection from '../components/Sections/RestaurantsSection';
 import CategoriesSection from '../components/Sections/CategoriesSection';
 import FavoritesSection from '../components/Sections/FavoritesSection';
+import PagerView from 'react-native-pager-view';
 
 function Home() {
   return (
     <ScrollView>
-      <MainBanner />
+      <PagerView style={styles.pager}>
+        <View key="1">
+          <MainBanner />
+        </View>
+        <View key="2">
+          <MainBanner />
+        </View>
+        <View key="3">
+          <MainBanner />
+        </View>
+      </PagerView>
       <View style={styles.content}>
         <RestaurantsSection />
         <CategoriesSection />
@@ -23,6 +34,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     padding: 10,
     paddingBottom: 25,
+  },
+  pager: {
+    height: 200,
   },
 });
 
