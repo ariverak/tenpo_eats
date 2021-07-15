@@ -2,13 +2,14 @@ import React from 'react';
 import {Text, View, StyleSheet, Image} from 'react-native';
 import logo from '../../images/logo.png';
 import image from '../../images/image.png';
+import PropTypes from 'prop-types';
 
-function MainBanner() {
+function MainBanner({title}) {
   return (
     <View style={styles.root}>
       <View style={styles.logo}>
         <Image source={logo} />
-        <Text style={styles.logoText}>DELIVER APP</Text>
+        <Text style={styles.logoText}>{title}</Text>
       </View>
       <View style={styles.img}>
         <Image source={image} />
@@ -16,6 +17,10 @@ function MainBanner() {
     </View>
   );
 }
+
+MainBanner.propTypes = {
+  title: PropTypes.string,
+};
 
 const styles = StyleSheet.create({
   root: {

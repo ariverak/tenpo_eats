@@ -1,6 +1,7 @@
 import React from 'react';
 import {StyleSheet} from 'react-native';
 import {Avatar as ElementAvatar} from 'react-native-elements';
+import PropTypes from 'prop-types';
 
 function Avatar({image}) {
   return (
@@ -11,6 +12,10 @@ function Avatar({image}) {
     />
   );
 }
+
+Avatar.propTypes = {
+  image: PropTypes.string,
+};
 
 const styles = StyleSheet.create({
   avatar: {

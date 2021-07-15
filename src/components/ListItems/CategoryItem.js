@@ -1,6 +1,6 @@
 import React from 'react';
 import {Image, View, Text, StyleSheet} from 'react-native';
-import {Tile} from 'react-native-elements';
+import PropTypes from 'prop-types';
 
 function CategoryItem({name, image}) {
   return (
@@ -15,6 +15,11 @@ function CategoryItem({name, image}) {
   );
 }
 
+CategoryItem.propTypes = {
+  name: PropTypes.string,
+  image: PropTypes.number,
+};
+
 const boxSize = 100;
 
 const styles = StyleSheet.create({
@@ -22,7 +27,6 @@ const styles = StyleSheet.create({
     width: boxSize * 2,
     height: boxSize,
     flex: 1,
-    // backgroundColor: 'red',
     margin: 10,
     borderRadius: 20,
     overflow: 'hidden',

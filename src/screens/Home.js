@@ -11,13 +11,13 @@ function Home() {
     <ScrollView>
       <PagerView style={styles.pager}>
         <View key="1">
-          <MainBanner />
+          <MainBanner title="DELIVER APP" />
         </View>
         <View key="2">
-          <MainBanner />
+          <MainBanner title="AWESOME APP" />
         </View>
         <View key="3">
-          <MainBanner />
+          <MainBanner title="FAST APP" />
         </View>
       </PagerView>
       <View style={styles.content}>

@@ -1,6 +1,7 @@
 import React from 'react';
 import {Image, View, Text, StyleSheet} from 'react-native';
 import {Icon} from 'react-native-elements';
+import PropTypes from 'prop-types';
 
 function RestaurantItem({name, image, rating, eta}) {
   return (
@@ -17,6 +18,13 @@ function RestaurantItem({name, image, rating, eta}) {
     </View>
   );
 }
+
+RestaurantItem.propTypes = {
+  name: PropTypes.string,
+  image: PropTypes.number,
+  rating: PropTypes.number,
+  eta: PropTypes.string,
+};
 
 const boxSize = 100;
 

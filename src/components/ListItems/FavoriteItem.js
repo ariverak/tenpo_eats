@@ -1,6 +1,7 @@
 import React from 'react';
 import {Image, View, Text, StyleSheet} from 'react-native';
 import {Icon} from 'react-native-elements';
+import PropTypes from 'prop-types';
 
 function FavoriteItem({name, image, rating, restaurantName, eta}) {
   return (
@@ -31,6 +32,15 @@ function FavoriteItem({name, image, rating, restaurantName, eta}) {
     </View>
   );
 }
+
+FavoriteItem.propTypes = {
+  title: PropTypes.string,
+  name: PropTypes.string,
+  image: PropTypes.number,
+  rating: PropTypes.number,
+  restaurantName: PropTypes.string,
+  eta: PropTypes.string,
+};
 
 const boxSize = 175;
 
