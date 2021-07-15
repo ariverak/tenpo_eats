@@ -26,9 +26,9 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 28,
     borderTopLeftRadius: 28,
     backgroundColor: '#fff',
-    padding: 15,
   },
   title: {
+    marginLeft: 15,
     fontFamily: 'Gotham-Bold',
     fontSize: 16,
   },

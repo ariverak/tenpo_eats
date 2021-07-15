@@ -24,9 +24,9 @@ const styles = StyleSheet.create({
     margin: 0,
     paddingTop: 25,
     backgroundColor: '#fff',
-    padding: 15,
   },
   title: {
+    marginLeft: 15,
     fontFamily: 'Gotham-Bold',
     fontSize: 16,
   },

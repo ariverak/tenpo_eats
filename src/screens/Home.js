@@ -1,29 +1,28 @@
 import React from 'react';
 import MainBanner from '../components/Banners/MainBanner';
-import {View, ScrollView, StyleSheet} from 'react-native';
-import {bannerHeight} from '../config/constants';
+import {ScrollView, View, StyleSheet} from 'react-native';
 import RestaurantsSection from '../components/Sections/RestaurantsSection';
 import CategoriesSection from '../components/Sections/CategoriesSection';
 import FavoritesSection from '../components/Sections/FavoritesSection';
 
 function Home() {
   return (
-    <View>
+    <ScrollView>
       <MainBanner />
-      <ScrollView style={styles.scroll}>
+      <View style={styles.content}>
         <RestaurantsSection />
         <CategoriesSection />
         <FavoritesSection />
-      </ScrollView>
-    </View>
+      </View>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  scroll: {
-    position: 'absolute',
-    width: '100%',
-    top: bannerHeight - 20,
+  content: {
+    backgroundColor: '#fff',
+    padding: 10,
+    paddingBottom: 25,
   },
 });
 
