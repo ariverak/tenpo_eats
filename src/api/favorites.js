@@ -1,8 +1,8 @@
 const favorites = [
   {
     id: 1,
-    restaurantName: 'Mcdonals',
-    restaurantLogo: 'Mcdonals',
+    restaurantName: 'McDonalds',
+    restaurantLogo: 'McDonalds',
     name: 'Combo Hamburguesa Bigmac',
     image: require('../images/favorites/mcdonalds-burger.png'),
     rating: 3.5,

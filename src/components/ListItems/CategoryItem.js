@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 function CategoryItem({name, image}) {
   return (
-    <View style={styles.restaurantItem}>
+    <View style={styles.categoryItem}>
       <View style={styles.imgContainer}>
         <Image source={image} style={styles.image} />
         <View style={styles.nameContainer}>

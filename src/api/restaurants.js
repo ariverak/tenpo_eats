@@ -1,7 +1,7 @@
 const restaurants = [
   {
     id: 1,
-    name: 'Mcdonals',
+    name: 'McDonalds',
     image: require('../images/restaurants/mcdonalds.png'),
     rating: 3.5,
     eta: '10-50 min.',

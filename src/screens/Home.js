@@ -5,6 +5,7 @@ import RestaurantsSection from '../components/Sections/RestaurantsSection';
 import CategoriesSection from '../components/Sections/CategoriesSection';
 import FavoritesSection from '../components/Sections/FavoritesSection';
 import PagerView from 'react-native-pager-view';
+import AddressSelector from '../components/Sections/AddressSelector';
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
           <MainBanner title="FAST APP" />
         </View>
       </PagerView>
+      <AddressSelector />
       <View style={styles.content}>
         <RestaurantsSection />
         <CategoriesSection />
@@ -34,6 +36,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     padding: 10,
     paddingBottom: 25,
+    borderTopLeftRadius: 30,
+    borderTopRightRadius: 30,
+    marginTop: -20,
   },
   pager: {
     height: 200,
