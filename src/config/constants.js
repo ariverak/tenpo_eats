@@ -1,1 +1,1 @@
-export const bannerHeight = 256;
+export const bannerHeight = 200;

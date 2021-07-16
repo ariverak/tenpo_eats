@@ -1,6 +1,6 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import MainStack from './src/routes/MainStack';
+import MainStack from './src/navigation/MainStack';
 import 'react-native-gesture-handler';
 import useAuth from './src/hooks/useAuth';
 import Loading from './src/components/Loading';

@@ -3,6 +3,7 @@ import {Text, View, StyleSheet, Image} from 'react-native';
 import logo from '../../images/logo.png';
 import image from '../../images/image.png';
 import PropTypes from 'prop-types';
+import {bannerHeight} from '../../config/constants';
 
 function MainBanner({title}) {
   return (
@@ -25,7 +26,7 @@ MainBanner.propTypes = {
 const styles = StyleSheet.create({
   root: {
     width: '100%',
-    height: 200,
+    height: bannerHeight,
     flexDirection: 'row',
   },
   logo: {

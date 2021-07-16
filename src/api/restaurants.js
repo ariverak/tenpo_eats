@@ -5,6 +5,7 @@ const restaurants = [
     image: require('../images/restaurants/mcdonalds.png'),
     rating: 3.5,
     eta: '10-50 min.',
+    discount: 50,
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ const restaurants = [
     image: require('../images/restaurants/melt.png'),
     rating: 4.5,
     eta: '10-60 min.',
+    discount: 30,
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ const restaurants = [
     image: require('../images/restaurants/yokono.png'),
     rating: 3.5,
     eta: '10-50 min.',
+    discount: 20,
   },
   {
     id: 4,

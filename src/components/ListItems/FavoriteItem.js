@@ -66,6 +66,7 @@ const styles = StyleSheet.create({
   name: {
     textAlign: 'left',
     fontFamily: 'GothamBook',
+    maxWidth: '90%',
   },
   restaurantName: {
     color: 'teal',
@@ -79,13 +80,15 @@ const styles = StyleSheet.create({
   },
   row: {
     flexDirection: 'row',
-    width: '100%',
     alignItems: 'center',
     justifyContent: 'space-between',
     marginBottom: 5,
+    overflow: 'hidden',
   },
   rating: {
     flexDirection: 'row',
+    justifyContent: 'flex-end',
+    width: 50,
   },
   ratingText: {
     fontFamily: 'GothamBook',
