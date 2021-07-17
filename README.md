@@ -1,5 +1,10 @@
 # TEMPO EATS
 This project is a test
+<p align="center">
+  <a href="https://github.com/ariverak/tenpo-eats">
+    <img src="src/images/home.jpg" alt="home" width="270" height="570">
+  </a>
+</p>
 # Getting Started
 
 Clone the repository
