@@ -5,6 +5,7 @@ This project is a test
     <img src="src/images/home.jpg" alt="home" width="270" height="570">
   </a>
 </p>
+
 # Getting Started
 
 Clone the repository
